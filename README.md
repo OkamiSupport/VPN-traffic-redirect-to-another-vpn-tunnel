@@ -55,7 +55,6 @@ make && sudo make install
 
 记得清除掉ShadowVPN client_up.sh中的一段命令：  
  
-# change routing table  
 echo changing default route  
 if [ pppoe-wan = "$old_gw_intf" ]; then  
 route add $server $old_gw_intf  
