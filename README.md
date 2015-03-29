@@ -1,4 +1,4 @@
-# vpn-traffic-redirect-vpn-
+# VPN traffic redirect to another VPN tunnel
 VPN的隧道转接技术，实现一个隧道里面的流量直接重定向到另一个隧道。
 实验是我在CentOS 6.5 x86_64上做的，现在已经投入到生产环境中。
 网络一直很稳定，带10个人一起玩东南亚CSGO毫无压力。
