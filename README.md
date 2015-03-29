@@ -33,12 +33,17 @@ sysctl -p
 
 我使用的是中科大的源（因为我就在合肥所以速度快 :P）
 wget http://mirrors.ustc.edu.cn/epel/6/x86_64/epel-release-6-8.noarch.rpm
+
 rpm -ivh epel-release-6-8.noarch.rpm
+
 yum makecache
+
 yum -y install openvpn
 
 签发证书的教程：
+
 http://blog.chinaunix.net/uid-29746173-id-4351133.html
+
 做完后记得打开openvpn使用的端口。
 
 3、安装ShadowVPN，使用ShadowVPN将国内中转服务器和国外服务器对接起来
