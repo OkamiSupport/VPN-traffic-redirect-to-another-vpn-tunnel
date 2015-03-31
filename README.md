@@ -107,7 +107,7 @@ ip rule add from 10.200.0.0/24 table netgamesg
 
 5、最后一步，设置iptables转发。  
 
-iptables -A POSTROUTING -s [你的openvpn源地址段] -j SNAT --to-source [你的ShadowVPN interface IP]  
+iptables -t nat -A POSTROUTING -s [你的openvpn源地址段] -j SNAT --to-source [你的ShadowVPN interface IP]  
 
 6、刷新路由表。  
 
