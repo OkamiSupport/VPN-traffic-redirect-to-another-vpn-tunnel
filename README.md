@@ -1,7 +1,6 @@
 # VPN traffic redirect to another VPN tunnel
 VPN的隧道转接技术，实现一个隧道里面的流量直接重定向到另一个隧道。  
-实验是我在CentOS 6.5 x86_64上做的，现在已经投入到生产环境中。  
-网络一直很稳定，带10个人一起玩东南亚CSGO毫无压力。 
+实验是我在CentOS 6.5 x86_64上做的。 
 拓扑是这样的：  
 
 http://ww3.sinaimg.cn/large/6f1310d0jw1epxdb762gaj20og0dgwfp.jpg
@@ -9,8 +8,8 @@ http://ww3.sinaimg.cn/large/6f1310d0jw1epxdb762gaj20og0dgwfp.jpg
 其他发行版的Linux可以把命令翻译下，原理是一模一样的。  
 
 需要工具：  
-1、OpenVPN （UDP封装速度快，效率高。玩游戏必备。PPTP VPN也行，但是速度没那么快。）  
-2、ShadowVPN （虽然是Beta状态，使用的效率还是很高的。因为无状态，所以不被干扰。）  
+1、OpenVPN （UDP封装速度快，效率高。）  
+2、ShadowVPN 
 3、IP rule  
 4、iptables  
 
