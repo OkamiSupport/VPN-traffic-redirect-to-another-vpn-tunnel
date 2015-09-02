@@ -8,10 +8,10 @@ http://ww3.sinaimg.cn/large/6f1310d0jw1epxdb762gaj20og0dgwfp.jpg
 其他发行版的Linux可以把命令翻译下，原理是一模一样的。  
 
 需要工具：  
-1、OpenVPN （UDP封装速度快，效率高。）  
-2、ShadowVPN 
+1、OpenVPN （UDP封装速度快，效率高。）   
+2、ShadowVPN  
 3、IP rule  
-4、iptables  
+4、iptables   
 
 步骤：  
 
