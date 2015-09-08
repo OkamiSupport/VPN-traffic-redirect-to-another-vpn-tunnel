@@ -3,7 +3,7 @@ VPN的隧道转接技术，实现一个隧道里面的流量直接重定向到�
 实验是我在CentOS 6.5 x86_64上做的。 
 拓扑是这样的：  
 
-http://ww3.sinaimg.cn/large/6f1310d0jw1epxdb762gaj20og0dgwfp.jpg
+![](https://i.imgur.com/KscYo1A.png)
 
 其他发行版的Linux可以把命令翻译下，原理是一模一样的。  
 
