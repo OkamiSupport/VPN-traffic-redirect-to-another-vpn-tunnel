@@ -18,7 +18,7 @@ VPN的隧道转接技术，实现一个隧道里面的流量直接重定向到�
 
 ###------先做好基本环境配置------  
 
-**0、更新生产环境（因为我是在纯净的系统上做的）  **
+**0、更新生产环境（因为我是在纯净的系统上做的）** 
 ```
 sudo yum -y groupinstall "Development Tools"  
 yum -y install openssl*  
@@ -67,7 +67,7 @@ echo default route changed to 10.7.0.1
 ```
 不然ShadowVPN up后，你所有的流量都从ShadowVPN隧道走了。  
 
-**测试隧道通信是否成功： ** 
+**测试隧道通信是否成功：**  
 ```
 sudo route add -host 8.8.8.8 dev tunX （tunX是你ShadowVPN的interface） 
 nslookup twitter.com 8.8.8.8 
@@ -102,7 +102,7 @@ ip route add default dev tunX （你的ShadowVPN interface） table netgamesg
 iptables -A PREROUTING -t mangle -s 10.200.0.0/24 -j MARK --set-mark 3  
 ip rule add fwmark 3 table netgamesg  
 ```
-**4、使用ip rule来根据源地址来使用路由表。 ** 
+**4、使用ip rule来根据源地址来使用路由表。**  
 ```
 ip rule add from 10.200.0.0/24 table netgamesg  
 ```
