@@ -96,7 +96,7 @@ echo "200 netgamesg" >> /etc/iproute2/rt_tables
 ip route add default dev tunX （你的ShadowVPN interface） table netgamesg  
 ```
 这里是在netgamesg这张路由表里面添加一个默认路由，默认网关出口是shadowvpn的接口。  
-```
+
 **3、使用ip rule来根据源地址来使用路由表。**  
 ```
 ip rule add from 10.200.0.0/24 table netgamesg  
