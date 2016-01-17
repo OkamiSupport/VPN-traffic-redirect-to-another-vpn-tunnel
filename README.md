@@ -103,15 +103,15 @@ ip rule add from 10.200.0.0/24 table netgamesg
 ```
 这里是规定源地址为10.200.0.0/24的IP数据包使用netgamesg这张路由表。  
 
-**5、最后一步，设置iptables转发。**   
+**4、最后一步，设置iptables转发。**   
 ```
 iptables -t nat -A POSTROUTING -s [你的openvpn源地址段] -j SNAT --to-source [你的ShadowVPN interface IP]  
 ```
-**6、刷新路由表。**  
+**5、刷新路由表。**  
 ```
 ip route flush cache  
 ```
-**7、添加脚本，让它开机启动自动执行即可。**  
+**6、添加脚本，让它开机启动自动执行即可。**  
 ```
 vim route.sh  
 
